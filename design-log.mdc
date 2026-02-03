@@ -47,3 +47,17 @@ The project follows a rigorous design log methodology for all significant featur
 4. **Ask clarifying questions** when: goal unclear, scope ambiguous, trade-offs exist, or missing context
 5. **Proceed directly** when: feedback specific and actionable, solution straightforward, no significant trade-offs
 6. **When uncertain**: State assumptions, propose options (quick fix vs. proper solution), ask for preference
+
+### Design Log Index
+
+1. **Maintain `./design-log/index.md`**: Catalog important design logs by category in markdown tables
+2. **Before reading**: Check index.md first to find relevant design logs
+3. **After creating/updating**: Add new entries to appropriate category table
+4. **Table format**: 
+```markdown
+   ## Category Name
+   | # | Title | Description |
+   |---|-------|-------------|
+   | NN | title | brief description |
+```
+5. **Group by feature area**: Core, Templates, State Management, etc.
