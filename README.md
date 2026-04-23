@@ -98,8 +98,7 @@ The project follows a rigorous design log methodology for all significant featur
 3. Cursor will now automatically follow the methodology when you use **Composer** or **Chat**.
 
 #### For Claude Code (CLI)
-1. Create a `.claude/rules/` folder in your project root.
-2. Copy the file [design-log-rules.md](./design-log.mdc) into that folder.
+1.Copy the file [design-log-rules.md](./design-log.mdc) into `claude.md`
 
 ### 2. Initialize the Directory
 Create a directory named `design-log` in your project root:
