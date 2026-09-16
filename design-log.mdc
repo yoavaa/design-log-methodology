@@ -3,18 +3,16 @@ description: "This rule provides standards for design log files"
 alwaysApply: true
 ---
 
-# Jay Framework Project Rules
-
-## Design Log Methodology
+# Design Log Methodology
 
 The project follows a rigorous design log methodology for all significant features and architectural changes.
 
-### Before Making Changes
+## Before Making Changes
 1. **Check design logs** in `./design-log/` for existing designs and implementation notes
 2. **For new features**: Create design log first, get approval, then implement
 3. **Read related design logs** to understand context and constraints
 
-### When Creating Design Logs
+## When Creating Design Logs
 1. **Structure**: Decisions for the Implementer (TL;DR) → Background → Problem → Prior Art / Adjacent Mechanisms → Questions and Answers → Design → Implementation Plan → Examples → Trade-offs
 2. **Lead with a "Decisions for the Implementer" TL;DR**: at the very top, list the settled decisions and the non-obvious constraints (the things a dev would otherwise reconstruct by reading the whole Q&A thread). Thoroughness lives below; navigability lives on top.
 3. **Prior Art / Adjacent Mechanisms section**: before designing, enumerate the existing mechanisms in the same area (related primitives, subsystems, and related design logs) and state whether each solves or constrains the problem. This is the author's job up front — do not rely on review to surface what already exists.
@@ -29,7 +27,7 @@ The project follows a rigorous design log methodology for all significant featur
 12. **Draw Diagrams**: Use mermaid inline diagrams when it makes sense
 13. **Define verification criteria**: how do we know the implementation solves the original problem
 
-### When Implementing
+## When Implementing
 1. **Follow the implementation plan** phases from the design log
 2. **Write tests first** or update existing tests to match new behavior
 3. **Do not Update design log** initial section once implementation started
@@ -38,13 +36,13 @@ The project follows a rigorous design log methodology for all significant featur
 6. **Run tests**: Include test results (X/Y passing) in implementation notes
 7. **After Implementation** add a summary of deviations from original design
 
-### When Answering Questions
+## When Answering Questions
 1. **Reference design logs** by number when relevant (e.g., "See Design Log #50")
 2. **Use codebase terminology**: ViewState, Contract, JayContract, phase annotations
 3. **Show type signatures**: This is a TypeScript project with heavy type usage
 4. **Consider backward compatibility**: Default to non-breaking changes
 
-### On User Feedback
+## On User Feedback
 1. **Assess feedback type**: Clarification → answer directly; Bug → fix or design log; Feature → evaluate design log need; Implementation issue → append to existing log
 2. **Append to existing design log** if: relates to in-progress work, missed constraint, implementation deviation, or refines existing design
 3. **Create new design log** if: new feature, multi-component change, architectural challenge, or affects multiple design logs
@@ -52,7 +50,7 @@ The project follows a rigorous design log methodology for all significant featur
 5. **Proceed directly** when: feedback specific and actionable, solution straightforward, no significant trade-offs
 6. **When uncertain**: State assumptions, propose options (quick fix vs. proper solution), ask for preference
 
-### Design Log Index
+## Design Log Index
 
 1. **Maintain `./design-log/index.md`**: Catalog important design logs by category in markdown tables
 2. **Before reading**: Check index.md first to find relevant design logs
